@@ -17,4 +17,29 @@ export default makeStyles(() => ({
   image: {
    padding:"-15px"
   },
+  media: {
+    height: 0,
+    paddingTop: '60%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundBlendMode: 'darken',
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    borderRadius: '15px',
+    height: '100%',
+    position: 'relative',
+  },
+title: {
+    padding: '0 18px',
+    alignContent:"Center"
+  },
+
 }));
+
+
+
+
+
+

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+
+import { Card, CardActions, CardContent, CardMedia, Button } from '@material-ui/core/';
 import { useDispatch } from 'react-redux';
 
 import Posts from './components/Posts/Posts';
@@ -26,12 +28,45 @@ const App = () => {
       <Grow in>
         <Container>
           <Grid container justify="space-between" alignItems="stretch" spacing={3}>
-            <Grid item xs={12} sm={7}>
-              <Posts setCurrentId={setCurrentId} />
+            <Grid item xs={12} sm={3}>
+            <Card className={classes.card}>
+              <CardMedia className={classes.media} image='https://etimg.etb2bimg.com/photo/78145880.cms'/>
+              <Typography className={classes.title} gutterBottom variant="h5" component="h2">Mumbai Indians(MI)</Typography>
+              
+            </Card>
+
+              {/* <Posts setCurrentId={setCurrentId} /> */}
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
+            <Card className={classes.card}>
+              <CardMedia className={classes.media} image='https://sportslightmedia.com/wp-content/uploads/2020/09/fotojet-2-jpg_710x400xt.jpg' />
+              <Typography className={classes.title} gutterBottom variant="h5" component="h2">Delhi Capitals(DC)</Typography>
+              
+            </Card>
+
+              {/* <Posts setCurrentId={setCurrentId} /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
+            <Card className={classes.card}>
+              <CardMedia className={classes.media} image='https://images.hindustantimes.com/img/2021/01/15/550x309/RR_logo_1610701396766_1610701407865.PNG'/>
+              <Typography className={classes.title} gutterBottom variant="h5" component="h2">Rajasthan Royals(RC)</Typography>
+              
+            </Card>
+
+              {/* <Posts setCurrentId={setCurrentId} /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
+            <Card className={classes.card}>
+              <CardMedia className={classes.media} image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxRTJzYeP2KeuP47EGuJLle7TrgRz5uULUQ&usqp=CAU'/>
+              <Typography className={classes.title} gutterBottom variant="h5" component="h2">Chennai Superkings(CSK)</Typography>
+              
+            </Card>
+
+              {/* <Posts setCurrentId={setCurrentId} /> */}
+            </Grid>
+            {/* <Grid item xs={12} sm={4}>
               <Form currentId={currentId} setCurrentId={setCurrentId} />
-            </Grid>
+            </Grid> */}
           </Grid>
         </Container>
       </Grow>
