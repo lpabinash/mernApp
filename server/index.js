@@ -14,6 +14,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/',(req,res)=>{
+  res.send("hello")
+});
+
 const CONNECTION_URL = 'mongodb+srv://MernApp:MernApp123@cluster0.zelau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const PORT = process.env.PORT|| 5000;
 
